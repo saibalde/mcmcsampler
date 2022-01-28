@@ -5,6 +5,8 @@ find_package(Eigen3 REQUIRED)
 
 add_subdirectory(src)
 
-enable_testing()
-include(GoogleTest)
-add_subdirectory(test)
+if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
+    enable_testing()
+    include(GoogleTest)
+    add_subdirectory(test)
+endif()
