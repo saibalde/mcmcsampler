@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\begin{document}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{mh_test.png}
+        \caption{Metropolis-Hastings}
+    \end{subfigure}
+    ~
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{am_test.png}
+        \caption{Adaptive Metropolis}
+    \end{subfigure}
+
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{dr_test.png}
+        \caption{Delayed Rejection}
+    \end{subfigure}
+    ~
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{dram_test.png}
+        \caption{Delayed Rejection Adaptive Metropolis}
+    \end{subfigure}
+\end{figure}
+
+\end{document}
